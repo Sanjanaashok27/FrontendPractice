@@ -1,2 +1,3 @@
- let num = 'sanjana';
-console.log(num);
+function myFunction() {
+  alert("Registered Successfully");
+}
