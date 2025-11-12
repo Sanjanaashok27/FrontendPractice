@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+        <form>
+            <h2>Register</h2>
+            <div class="form-group">
+                <label for="FirstName">FirstName:</label>
+                <input type="text" id="FirstName" name="FirstName" required><br><br>
+
+                <label for="LastName">LastName:</label>
+                <input type="text" id="LastName" name="LastName" required><br><br>
+
+                <label for ="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>  <br><br>
+
+                <label for="confirmpassword"> Confirm Password:</label>
+                <input type="password" id="confirmpassword" name="confirmpassword" required><br><br>
+                
+                <label for="number">Phone Number:</label>
+                <input type="tel" id="number" name="number" required><br><br>
+
+                <label for = "age">Age:</label>
+                <input type = "number"   id = "age" name = "age" min="18" max="600" required><br><br>
+
+                <label for=" gender">Gender:</label>
+                <select name = "gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>    
+                </select><br><br>
+
+
+                
+                <button align = " center " type="registerbutton">Register </button>
+              </div>  
+            </form>
+    </body>
+</html>
