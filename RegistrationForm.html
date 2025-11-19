@@ -4,58 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
     <link rel="stylesheet" href="RegistrationFormStyle.css">
-    <body>
+</head>
+<body>
+    <div class="card">
         <form id="registrationForm">
-            <h2>Registration Form</h2>
-            <div class="form-group">
-                <label for="FirstName">FirstName:</label>
-                <input type="text" id="FirstName" name="FirstName" required>
-                <span id="fnameError" class="error"></span><br><br>
+            <div class="form-header">REGISTRATION FORM</div>
+            <div class="form-grid">
+                <div class="col">
+                    
+                    <div class="name-row">
+                        <div class="form-group name-field">
+                            <label for="FirstName">FirstName:</label>
+                            <input type="text" id="FirstName" name="FirstName" required>
+                            <span id="fnameError" class="error"></span>
+                        </div>
+                        <div class="form-group name-field">
+                            <label for="LastName">LastName:</label>
+                            <input type="text" id="LastName" name="LastName" required>
+                            <span id="lnameError" class="error"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for ="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <span id="passwordError" class="error"></span>
+                    </div>
 
-                <label for="LastName">LastName:</label>
-                <input type="text" id="LastName" name="LastName" required>
-                <span id="lnameError" class="error"></span><br><br>
+                    <div class="form-group">
+                        <label for="confirmpassword"> Confirm Password:</label>
+                        <input type="password" id="confirmpassword" name="confirmpassword" required>
+                        <span id="confirmError" class="error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="number">Phone Number:</label>
+                        <input type="tel" id="number" name="number" required>
+                        <span id="phoneError" class="error"></span>
+                    </div>
 
-                <label for ="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <span id="emailError" class="error"></span><br><br>
+                    <div class="form-group">
+                        <label for="dob">Date of birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                        <span id="dobError" class="error"></span>
+                    </div>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <span id="passwordError" class="error"></span><br><br>
+                    <div class="form-group">
+                        <label for = "age">Age:</label>
+                        <input type = "number" id = "age" name = "age" min="18" max="60" readonly>
+                        <span id="ageError" class="error"></span>
+                    </div>
 
-                <label for="confirmpassword"> Confirm Password:</label>
-                <input type="password" id="confirmpassword" name="confirmpassword" required>
-                <span id="confirmError" class="error"></span><br><br>
-                
-                <label for="number">Phone Number:</label>
-                <input type="tel" id="number" name="number" required>
-                <span id="phoneError" class="error"></span><br><br>
+                    <div class="form-group">
+                        <label for = "gender">Gender:</label>
+                        <select name = "gender" id="gender">
+                            <option value="" disabled selected>Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>    
+                        </select>
+                        <span id="genderError" class="error"></span>
+                    </div>
 
-                <label for="dob">Date of birth:</label>
-                <input type="date" id="dob" name="dob" required>
-                <span id="dobError" class="error"></span><br><br>
-
-                <label for = "age">Age:</label>
-                <input type = "number"   id = "age" name = "age" min="18" max="60" required>
-                <span id="ageError" class="error"></span><br><br>
-
-                <label for=" gender">Gender:</label>
-                <select name = "gender" id="gender">
-                    <option value="" disabled selected>Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>    
-                </select>
-                <span id="genderError" class="error"></span><br><br>
-
-
-                
-                <button type="submit">Register</button>
-              </div>  
-            </form>
+                    <div class="actions">
+                        <button type="submit">REGISTER NOW</button>
+                        <button type="button" class="secondary" onclick="document.getElementById('registrationForm').reset();">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
     <script src="first.js"></script>
-    </body>
+</body>
 </html>
